@@ -1,0 +1,78 @@
+.dashboard {
+    min-height: 100vh;
+    padding: 4rem 0.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__content {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+
+        display: grid;
+        gap: 1.5rem;
+        justify-content: center;
+
+        grid-template-columns: repeat(1, minmax(300px, 330px));
+
+        .dashboard__person {
+            width: 100%;
+            background-color: $blue-800;
+            border-radius: $radius;
+        }
+
+        .dashboard__item {
+            width: 100%;
+            padding-top: 2.15rem;
+            background-color: #ffffff0a;
+            border-radius: $radius;
+
+            background-repeat: no-repeat;
+            background-position: 92% -8%;
+        }
+
+        .dashboard__item--work {
+            background-color: $red-100;
+            background-image: url(../../images/icon-work.svg);
+        }
+        .dashboard__item--play {
+            background-color: $blue-100;
+            background-image: url(../../images/icon-play.svg);
+        }
+        .dashboard__item--study {
+            background-color: $red-200;
+            background-image: url(../../images/icon-study.svg);
+        }
+        .dashboard__item--exercise {
+            background-color: $green-100;
+            background-image: url(../../images/icon-exercise.svg);
+        }
+        .dashboard__item--social {
+            background-color: $violet-500;
+            background-image: url(../../images/icon-social.svg);
+        }
+        .dashboard__item--self-care {
+            background-color: $orange-100;
+            background-image: url(../../images//icon-self-care.svg);
+        }
+    }
+
+    @media (min-width: 1024px) {
+        &__content {
+            grid-template-columns: repeat(4, 1fr);
+
+            .dashboard__person {
+                grid-row-start: 1;
+                grid-row-end: 3;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                height: 100%;
+
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}

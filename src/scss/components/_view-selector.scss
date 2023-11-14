@@ -1,0 +1,28 @@
+.view-selector {
+    padding: 1.25rem 2rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+        font-size: $fs-small;
+        color: $blue-200;
+        cursor: pointer;
+
+        &:hover {
+            color: white;
+        }
+
+        &.view-selector__item--active {
+            color: white;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        flex-direction: column;
+
+        &__item:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+}

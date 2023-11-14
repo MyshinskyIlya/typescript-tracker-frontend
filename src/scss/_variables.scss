@@ -1,0 +1,28 @@
+@import "./libs//fonts";
+
+//colors
+$blue-100: hsl(195, 74%, 62%);
+$blue-200: hsl(236, 100%, 87%);
+$blue-400: hsl(235, 45%, 61%);
+$blue-500: hsl(246, 80%, 60%);
+$blue-800: hsl(235, 46%, 20%);
+$blue-900: hsl(226, 43%, 10%);
+$red-100: hsl(15, 100%, 70%);
+$red-200: hsl(348, 100%, 68%);
+$green-100: hsl(145, 58%, 55%);
+$violet-500: hsl(264, 64%, 52%);
+$orange-100: hsl(43, 84%, 65%);
+
+// typography
+$family: "Rubik", sans-serif;
+$fs-base: 18px;
+$fs-small: 12px;
+$fs-large: 32px;
+
+$weight-light: 300;
+$weight-normal: 400;
+$weight-bold: 500;
+
+// borders
+$radius: 1rem;
+$radius-full: 50%;
